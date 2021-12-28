@@ -19,6 +19,7 @@ $ cd env/Scripts/activate
 ```
 1.) Use the package manager [pip](https://pip.pypa.io/en/stable/) to install some packages require for running it in the root folder[Inside Internship]
 ```bash
+$ (env) cd ../../Event-App
 $ (env) pip install -r requirements.txt
 ```
 2.) Download the [MySQL Database](https://dev.mysql.com/downloads/installer/)
