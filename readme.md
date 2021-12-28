@@ -15,10 +15,12 @@ git clone https://github.com/Kai391/Event-App.git
 ```bash
 $ pip install virtualenv
 $ virtualenv env
-$ cd env/Scripts/activate
+$ cd env/Scripts
+$ activate
 ```
 1.) Use the package manager [pip](https://pip.pypa.io/en/stable/) to install some packages require for running it in the root folder[Inside Internship]
 ```bash
+$ (env) cd ../../Event-App
 $ (env) pip install -r requirements.txt
 ```
 2.) Download the [MySQL Database](https://dev.mysql.com/downloads/installer/)
@@ -36,6 +38,7 @@ give access to user
 ```bash
 mysql>GRANT ALL ON Internship.* TO 'intern'@'localhost';
 mysql>flush privileges;
+mysql>exit;
 ```
 
 ## Running app
@@ -46,6 +49,8 @@ $ (env) python manage.py migrate
 $ (env) python manage.py runserver
 ```
 ## Event Application
+Go to browser and type [127.0.0.1:8000](127.0.0.1:8000)
+###
 Boom Your application
 ###
 ![](Screenshot/1.png)
