@@ -8,6 +8,21 @@
 {{l.Time}} {% endcomment %}
 <div style="background-color: #222222; height: 10vh;"></div>
 <Label class="like-label">Likes</Label>
+<div class="col-xs-12 col-md-6 col-lg-4 my-3" style="margin-left:10%;margin-right:90%;">
+  <div class="about-item" style="display:flex;">
+    <img class="img-fluid" style="max-width:50%;" src="{% static "assets/img/about/img1.jpg"%}" alt="">
+    <div class="about-text">
+      <div class="d-flex justify-content-between" style="align-items:flex-end;">
+        <h3><a href="#">>Wanna Know Our Mission?</a></h3>
+        <i class="fas fa-heart icon" data-color="True" data-id="none"></i>
+      </div>
+      <Lable>Location: <span>Los Angels</span></Label>
+        <div>
+          <Label>Date-Time: <span>2021-02-01, 11:00</span></Label>
+        </div>
+    </div>
+  </div>
+</div>
 {% for e in events %}
 <div class="col-xs-12 col-md-6 col-lg-4 my-3" style="margin-left:10%;margin-right:90%;">
     <div class="about-item" style="display:flex;">
