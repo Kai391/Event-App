@@ -41,6 +41,8 @@ mysql>flush privileges;
 ## Running app
 In root folder where 'manage.py' file exist, run command
 ```bash
+$ (env) python manage.py makemigrations
+$ (env) python manage.py migrate
 $ (env) python manage.py runserver
 ```
 ## Event Application
