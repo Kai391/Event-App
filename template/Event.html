@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<div style="background-color: #222222; height: 10vh;"></div>
+
+<div class="container-fluid gap my-3" id="first-toggle">
+    <div class="container gap d-flex">
+        <form action={% url 'createEvent' %} class="container" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h3 class="no-gap text-center text-danger big-heading">Contact Us</h3>
+            <div class="mb-3 gap" id='name'>
+                <label for="exampleInputEmail1" class="form-label">Event Name</label>
+                <input type="text" class="form-control" name='name'>
+                <b><span class="text-danger error"></span></b>
+            </div>
+            <div class="mb-3 gap" id='name'>
+                <label for="exampleInputEmail1" class="form-label">Date</label>
+                <input type="date" class="form-control" name='Date'>
+                <b><span class="text-danger error"></span></b>
+            </div>
+            <div class="mb-3 gap" id='name'>
+                <label for="exampleInputEmail1" class="form-label">Time</label>
+                <input type="time" class="form-control" name='time'>
+                <b><span class="text-danger error"></span></b>
+            </div>
+            <div class="mb-3 gap" id='name'>
+                <label for="exampleInputEmail1" class="form-label">Location</label>
+                <input type="text" class="form-control" name='location'>
+                <b><span class="text-danger error"></span></b>
+            </div>
+            <div class="mb-3 gap" id='name'>
+                <label for="exampleInputEmail1" class="form-label">Image</label>
+                <input type="file" class="form-control" name='image' accept="image/*">
+                <b><span class="text-danger error"></span></b>
+            </div>
+            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+
+{% endblock body %}

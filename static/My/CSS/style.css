@@ -1,0 +1,19 @@
+.icon{
+    color: red; 
+    padding: 8px; 
+    cursor: pointer; 
+    font-size: 25px; 
+    border-radius: 1000px; 
+    box-shadow:0px 0px 15px grey;
+}
+
+.icon:hover{
+    color:white;
+    background-color: red;
+}
+
+.like-label{
+    font-size: 15vh;
+    font-family: fantasy;
+    margin-left: 7%;
+}
