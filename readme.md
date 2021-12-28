@@ -15,7 +15,8 @@ git clone https://github.com/Kai391/Event-App.git
 ```bash
 $ pip install virtualenv
 $ virtualenv env
-$ cd env/Scripts/activate
+$ cd env/Scripts
+$ activate
 ```
 1.) Use the package manager [pip](https://pip.pypa.io/en/stable/) to install some packages require for running it in the root folder[Inside Internship]
 ```bash
